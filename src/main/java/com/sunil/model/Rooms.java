@@ -6,12 +6,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NegativeOrZero;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Schema(description = "Hotel Rooms")
 public class Rooms {
 	
@@ -32,51 +36,6 @@ public class Rooms {
 	
 	
 
-	public Rooms() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Rooms(Integer roomId, String roomType, String roomNo, String status) {
-		super();
-		this.roomId = roomId;
-		this.roomType = roomType;
-		this.roomNo = roomNo;
-		this.status = status;
-	}
-
-	public Integer getRoomId() {
-		return roomId;
-	}
-
-	public void setRoomId(Integer roomId) {
-		this.roomId = roomId;
-	}
-
-	public String getRoomType() {
-		return roomType;
-	}
-
-	public void setRoomType(String roomType) {
-		this.roomType = roomType;
-	}
-
-	public String getRoomNo() {
-		return roomNo;
-	}
-
-	public void setRoomNo(String roomNo) {
-		this.roomNo = roomNo;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
-
+	
 
 }

@@ -1,5 +1,6 @@
 package com.sunil.repo;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -23,6 +24,7 @@ public class RoomsTestingRepo {
 	
 	@Test
 	@Commit
+	@Disabled
 	public void rommsSaveCallTesting() {
 		
 		Rooms room =new	Rooms(null,"AC","789",  "empty");

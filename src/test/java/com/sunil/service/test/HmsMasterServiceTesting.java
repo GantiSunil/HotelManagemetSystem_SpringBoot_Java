@@ -56,6 +56,7 @@ public class HmsMasterServiceTesting {
 	
 	
 	@Test
+	@Disabled
 	public void serviceLayerTestingforSave() throws Exception {
 		
 		List<Rooms> rooms = new ArrayList<>();

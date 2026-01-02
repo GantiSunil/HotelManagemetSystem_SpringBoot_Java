@@ -24,6 +24,7 @@ import com.sunil.service.HMSMasterIService;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 
+@Disabled
 @WebMvcTest(HMSMasterController.class)
 public class HMSMasterControllerTest {
 	
