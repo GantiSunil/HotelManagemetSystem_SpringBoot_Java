@@ -25,14 +25,14 @@ public class Rooms {
 	
 	@Schema(description = "roomType", defaultValue = "AC")
 	@Column(nullable=false)
-	@NotNull(message="RoomType value is null")
-	private String roomType;
+	@NotNull(message="RoomTypeID value is null")
+	private int roomTypeId;
 	@Schema(description = "roomNo", defaultValue = "G1111")
 	@Column(unique=true)
 	private String roomNo;
 	@Schema(description = "status", defaultValue = "available")
 	@Column(nullable=false)
-	private String status;
+	private byte statusId;
 	
 	
 
